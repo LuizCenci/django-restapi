@@ -138,7 +138,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'templates/static')
 ]
@@ -165,3 +165,8 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
+
+LOGIN_REDIRECT_URL = '/member'
+SOCIALACCOUNT_LOGIN_ON_GET = True
+LOOGOUT_REDIRECT_URL = '/'
+ACCOUNT_LOGOUT_ON_GET = True

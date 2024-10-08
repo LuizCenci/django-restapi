@@ -78,3 +78,21 @@ p {
     font-size: 1.5rem;
     line-height: 1.5rem;
 }
+
+
+.btn {
+    background-color: #e74c3c; /* Cor de fundo vermelha */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Texto em negrito */
+    border: none; /* Remove qualquer borda padrão */
+    cursor: pointer; /* Cursor de mãozinha ao passar por cima */
+    transition: background-color 0.3s ease; /* Suaviza a transição da cor ao passar o mouse */
+}
+
+.btn:hover {
+    background-color: #c0392b; /* Cor ao passar o mouse (um tom mais escuro de vermelho) */
+}

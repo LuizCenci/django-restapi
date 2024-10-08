@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Área restrita</title>
+</head>
+<body>
+    <header>
+        <img src="{% static 'assets/member.jpeg' %}" alt="logo" class="logo">
+    </header>
+    <main>
+        <h1>Member Room</h1>
+        <p>Only authenticated people can enter here!</p>
+        <div class="btn">
+            <a class="btn" href="http://localhost:8000/accounts/logout/">SAIR</a>
+        </div>
+        
+    </main>
+</body>
+</html> 
