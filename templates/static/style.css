@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root {
+:root { 
     --background-color: #01080E;
     --offwhite: #E1E1E1;
     --font-family: "Prompt", sans-serif;
@@ -61,6 +61,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .social-media-icon {
@@ -77,22 +78,37 @@ p {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 1.5rem;
+    
 }
 
+.social-media-link{
+    text-decoration: none;
+}
 
-.btn {
-    background-color: #e74c3c; /* Cor de fundo vermelha */
-    color: white; /* Cor do texto */
-    padding: 10px 20px; /* Espaçamento interno */
-    text-decoration: none; /* Remove o sublinhado */
-    border-radius: 5px; /* Bordas arredondadas */
-    font-size: 16px; /* Tamanho da fonte */
+.logout-btn-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.logout-btn {
+    text-decoration: none;
+    background-color: var(--offwhite);
+    color: var(--background-color);
+    border-radius: 0.3rem;
+    width: 6.5rem;
+    height: 1.6rem;
+    font-weight: 400; 
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+    margin-bottom: 2rem;
     font-weight: bold; /* Texto em negrito */
-    border: none; /* Remove qualquer borda padrão */
     cursor: pointer; /* Cursor de mãozinha ao passar por cima */
     transition: background-color 0.3s ease; /* Suaviza a transição da cor ao passar o mouse */
 }
 
-.btn:hover {
-    background-color: #c0392b; /* Cor ao passar o mouse (um tom mais escuro de vermelho) */
+.logout-btn:hover{
+    background-color: #c0392b;
+    color: var(--offwhite);
 }
